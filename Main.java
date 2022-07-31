@@ -1,3 +1,5 @@
+import java.util.*;
+
 class Main {
 
   public String carModel;
@@ -14,8 +16,22 @@ class Main {
     isLuxury = luxury;
   }
 
+  /*
   public static void main(String[] args) {
     Main camry = new Main("Camry", "Toyota", 2022, 6, true);
     System.out.println(camry.carBrand + " " + camry.carModel);
   }
+  */
+
+  public static void main(String[] args) {
+    
+    List countriesList = new ArrayList();
+    
+    countriesList.add("Nigeria");
+    countriesList.add("Cameroun");
+    countriesList.add("Togo");
+    
+    System.out.println(countriesList.toString());
+  }
+  
 }
