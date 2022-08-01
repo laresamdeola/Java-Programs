@@ -1,37 +1,17 @@
-import java.util.*;
-
 class Main {
 
-  public String carModel;
-  public String carBrand;
-  public int carYear;
-  public int carSitters;
-  public boolean isLuxury;
+  public String name;
+  public int age;
+  public String nationality;
 
-  public Main(String model, String brand, int year, int sitters, boolean luxury) {
-    carModel = model;
-    carBrand = brand;
-    carYear = year;
-    carSitters = sitters;
-    isLuxury = luxury;
+  public Main(String fullName, int fullAge, String fullNationality) {
+    name = fullName;
+    age = fullAge;
+    nationality = fullNationality;
   }
-
-  /*
-  public static void main(String[] args) {
-    Main camry = new Main("Camry", "Toyota", 2022, 6, true);
-    System.out.println(camry.carBrand + " " + camry.carModel);
-  }
-  */
 
   public static void main(String[] args) {
-    
-    List countriesList = new ArrayList();
-    
-    countriesList.add("Nigeria");
-    countriesList.add("Cameroun");
-    countriesList.add("Togo");
-    
-    System.out.println(countriesList.toString());
+    Main damilare = new Main("Damilare Adeola", 30, "Nigeria");
+    System.out.println(damilare.name + " " + damilare.nationality);
   }
-  
 }
