@@ -1,3 +1,4 @@
+/*
 import java.util.*;
 
 class Main2 {
@@ -13,3 +14,4 @@ class Main2 {
     System.out.println(countriesList.toString());
   }
 }
+*/
