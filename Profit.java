@@ -1,11 +1,7 @@
 class Profit {
-  int totalRevenue;
-  int totalCost;
-  int currentProfit;
-  int previousProfit;
+  int totalRevenue, totalCost, currentProfit, previousProfit, percent;
   String sharePriceIncrease;
   Boolean profitable;
-  int percent;
   private String limitedLiability = "yes";
 
   public String getLimitedLiability() {

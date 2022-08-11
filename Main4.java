@@ -1,5 +1,5 @@
-/*
 class Main {
+
   public String name;
   public String state;
   public int age;
@@ -10,8 +10,4 @@ class Main {
     age = yourAge;
   }
 
-  public static void main(String[] args){
-    Main chika = new Main("Chikam", "Abia", 24);
-    System.out.println(chika.name + " " + chika.state + " " + chika.age);
-  }
-}*/
+}
