@@ -2,20 +2,20 @@ class Nigeria {
   String countryName, continent, currency;
   int amountOfStates;
 
-  public String displayName(){
+  public String displayName() {
     return countryName;
   }
 
-  public String displayContinent(){
+  public String displayContinent() {
     return continent;
   }
 
-  public String displayCurrency(){
+  public String displayCurrency() {
     return currency;
   }
 
-  public int displayStates(){
+  public int displayStates() {
     return amountOfStates;
   }
-  
+
 }
