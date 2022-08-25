@@ -3,13 +3,10 @@
 public class Main {
 
   public static void main(String[] args) {
-    Genre fela = new Genre();
-    fela.artistName = "Fela Anikulapo Kuti";
-    fela.artistAlbum = "Zombie";
-    fela.isAlive = true;
+    HeadsOrTail game1 = new HeadsOrTail();
 
-    System.out.println(fela.nameOfArtist());
-    System.out.println(fela.nameOfAlbum());
-    System.out.println(fela.deadOrAlive());
+    System.out.println(game1.aRandomNumber());
+    System.out.println(game1.headsOrTails());
+    System.out.println(game1.fate());
   }
 }
