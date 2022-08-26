@@ -1,12 +1,18 @@
-//import java.util.Scanner;
+import java.util.Scanner;
 
 public class Main {
 
   public static void main(String[] args) {
-    HeadsOrTail game1 = new HeadsOrTail();
 
-    System.out.println(game1.aRandomNumber());
-    System.out.println(game1.headsOrTails());
-    System.out.println(game1.fate());
+    Bmi lare = new Bmi();
+    Scanner scanner = new Scanner(System.in);
+
+    System.out.println("What is your weight? ");
+    lare.weight = scanner.nextByte();
+    System.out.println("What is your height? ");
+    lare.height = scanner.nextByte();
+
+    System.out.println(lare.calcBmi());
+
   }
 }
