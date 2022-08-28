@@ -1,5 +1,5 @@
 class Nigeria {
-  String countryName, continent, currency;
+  String countryName, continent, currency; countryTime;
   int amountOfStates;
 
   public String displayName() {
