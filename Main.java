@@ -4,15 +4,11 @@ public class Main {
 
   public static void main(String[] args) {
 
-    Bmi lare = new Bmi();
+    NetIncome sample = new NetIncome();
     Scanner scanner = new Scanner(System.in);
 
-    System.out.println("What is your weight? ");
-    lare.weight = scanner.nextByte();
-    System.out.println("What is your height? ");
-    lare.height = scanner.nextByte();
-
-    System.out.println(lare.calcBmi());
+    System.out.println("How much is your annual gross income?e.g 10000 ");
+    sample.grossIncome = scanner.nextInt();
 
   }
 }
