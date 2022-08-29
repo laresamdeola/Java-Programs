@@ -1,7 +1,7 @@
 // A program to calculate one's net income - UK
 
 class NetIncome {
-  public int grossIncome, taxableIncome;
+  public int grossIncome, taxableIncome, basicIncome, higherIncome, additionalIncome;
   public int personalAllowance = 12500;
   public double basic = 0.20;
   public double higher = 0.40;
@@ -11,19 +11,25 @@ class NetIncome {
     return grossIncome - personalAllowance;
   }
 
-  public int getBasic() {
-    taxableIncome = getAllowance(grossIncome);
-    return (int) (taxableIncome * basic);
+  public String minimumWage() {
+    return String.format("Your net income is %d", grossIncome);
   }
 
-  public int getHigher() {
+  public String getBasic() {
     taxableIncome = getAllowance(grossIncome);
-    return (int) (taxableIncome * higher);
+    basicIncome = grossIncome - ((int) (taxableIncome * basic));
+    return String.format("Your net income is %d", basicIncome);
   }
 
-  public int getAdditional() {
+  public String getHigher() {
     taxableIncome = getAllowance(grossIncome);
-    return (int) (taxableIncome * additional);
+    higherIncome = grossIncome - ((int) (taxableIncome * higher));
+    return String.format("Your net income is %d", higherIncome);
   }
 
+  public String getAdditional() {
+    taxableIncome = getAllowance(grossIncome);
+    additionalIncome = grossIncome - ((int) (taxableIncome * additional));
+    return String.format("Your net income is %d", additionalIncome);
+  }
 }
