@@ -1,3 +1,4 @@
+/*
 import javax.swing.JFrame;
 import javax.swing.JButton;
 import javax.swing.ImageIcon;
@@ -37,6 +38,7 @@ public class MyFrame extends JFrame implements ActionListener{
 
 //Lambda Expressions
 
+/*
 public class MyFrame extends JFrame {
 
   JButton button;
@@ -65,3 +67,4 @@ public class MyFrame extends JFrame {
     this.add(button);
   }
 }
+*/
